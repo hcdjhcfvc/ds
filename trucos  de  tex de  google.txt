@@ -1,0 +1,38 @@
+Hacer que no se mueva: Runner.instance_.playingIntro = true;
+Hacer que se mueva: Runner.instance_.playingIntro = false;
+Cambiar la velocidad: Runner.instance_.setSpeed(100);
+Inmortalidad: Runner.instance_.gameOver = function(){};
+Sonic: https://m.imgur.com/7BuRkS9.png
+Batman: https://chromedino.com/assets/batman2...
+Mario: https://chromedino.com/assets/offline...
+Naruto: https://trex-runner.com/img/offline-s...
+
+
+Dirección de la "skin" de Yoshi para introducir en el juego:
+
+https://guinxu.com/otros/yoshi.png
+
+------------------------------------------------------------------------------
+
+Runner.instance_.setSpeed(1)
+Runner.instance_.setSpeed(100)
+Runner.instance_.setSpeed(-1) //Pierde puntos xD
+Runner.instance_.setSpeed(0.1)
+Runner.instance_.setSpeed(500)
+
+Runner.instance_.tRex.setJumpVelocity(20)
+Runner.instance_.tRex.setJumpVelocity(50)
+Runner.instance_.tRex.setJumpVelocity(1000)
+Runner.instance_.tRex.setJumpVelocity(0)
+
+Runner.instance_.horizon.addCloud()
+
+Runner.instance_.horizon.removeFirstObstacle()
+
+Runner.instance_.inverted = true //Sale la luna aunque sea de dia
+
+Runner.prototype.gameOver = function() {}  //Remplazar el Game Over por una funcion vacia
+
+Runner.instance_.msPerFrame = 0.01 //Lo que tardas en ganar un punto
+
+Runner.instance_.distanceRan = 3999900 //Puntuacion
